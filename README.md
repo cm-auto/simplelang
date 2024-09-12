@@ -69,6 +69,18 @@ var another_test string
 }
 ```
 
+Or string interpolation:
+
+```
+print($"index ({i - 1}): hi for the {i}{ordinal} time")
+```
+
+Go code:
+
+```go
+fmt.Println(fmt.Sprintf("index (%v): hi for the %v%v time", i-1, i, ordinal))
+```
+
 Since I didn't really design the language and I kept adding features, the code
 is quite messy but I achieved what I hoped with this project, which is getting
 an understanding of how compilers work.
